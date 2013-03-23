@@ -6,6 +6,7 @@
 
 # Ignore bundler config
 /.bundle
+/vendor/bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -13,3 +14,26 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+*.pdf
+config/database.yml
+.ruby-version
+*.sql
+*.pem
