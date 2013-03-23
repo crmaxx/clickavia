@@ -15,15 +15,27 @@ group :assets do
 end
 
 gem 'simple_form'
+
+gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'kaminari-bootstrap'
+gem 'bootstrap-datepicker-rails'
+
 gem 'haml-rails'
+
 gem 'rest-client'
 gem 'rabl'
 
 group :development do
-  gem 'rails_best_practices'
+  gem 'annotate'
+  #
+  gem 'better_errors', '~> 0.7.0'
+  gem 'binding_of_caller', '~> 0.7.1', :git => 'git://github.com/banister/binding_of_caller.git'
+  gem 'quiet_assets'
+  gem 'lol_dba'
 end
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'webmock'
+  gem 'thin'
 end
